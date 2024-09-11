@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1> Formulário de Inscrição</h1>
+            <form action="" method="get">
+                <label for="">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="">Telefone</label>
+                <input type="text" id="telefone" name="telefone" required>
+
+                <label for="">CEP</label>
+                <input type="text" onblur="coletar()" name="cep" id="cep" required>
+
+                <label for="">Endereço</label>
+                <input type="text" name="endereco" id="endereco" disabled>
+
+                <label for="">Bairro</label>
+                <input type="text" name="bairro" id="bairro"disabled>
+
+                <label for="">Cidade</label>
+                <input type="text" name="cidade" id="cidade"disabled>
+
+                <!-- Selecao de cursos -->
+                <label for="">Cursos Profissionalizantes</label>
+                <select name="cursos" id="cursos">
+                    <option value="curso1">Informática Básica</option>
+                    <option value="curso2">Mecanico de Bicicletas</option>
+                    <option value="curso3"> Desenvolvedor de Sistemas</option>
+                    <option value="curso4"> Eletricista Pedrial</option>
+                </select><br><br>
+
+                <!-- genero Radio Button -->
+                <label for="">Gênero</label> <br> <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="">Masculino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="">Feminino</label> <br> <br>
+                <label for="">Outros</label>
+                <select name="genero" id="genero">
+                    <option value="genero0" placeholder>Personalizar</option>
+                    <option value="genero1">Trans</option required>
+                    <option value="genero2">Lesbica</option required>
+                    <option value="genero3">Homessexual</option required>
+                    <option value="genero4">Normal</option required>
+
+                </select>
+                <!-- Adicionar caixas de selecao -->
+                <br><br>
+                <label for="">Unidade Operacional</label>
+                <input type="checkbox" id="cetafaju" name="cursos" value="CETAFAJU">
+                <label for="">CETAFAJU</label>
+                <input type="checkbox" name="cursos" id="cetcc" value="CETCC">
+                <label for="">CETCC</label>
+                <input type="checkbox" name="cursos" id="cetafest" value="CETAFEST">
+                <label for="">CETAFEST</label>
+                <input type="checkbox" name="cursos" id="ceticc" value="CETICC">
+                <label for="">CETICC</label>
+                <br>
+                <br>
+                <button> Enviar</button>
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+<!-- https://www.bing.com/images/search?view=detailV2&ccid=iB8N%2bqeW&id=55218C9913BBA3F0F8C8618E3146BF0F1DEDC58F&thid=OIP.iB8N-qeWUkzVntmbFv9ZowHaEK&mediaurl=https%3a%2f%2fwallpaperboat.com%2fwp-content%2fuploads%2f2019%2f10%2fcool-website-background-17.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.881f0dfaa796524cd59ed99b16ff59a3%3frik%3dj8XtHQ%252b%252fRjGOYQ%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1920&q=background+sites&simid=608026546566014331&FORM=IRPRST&ck=C04EEE71229773101D4BA66F056034D9&selectedIndex=14&itb=0 -->
